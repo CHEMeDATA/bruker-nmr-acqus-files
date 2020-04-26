@@ -46,9 +46,9 @@ $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 
 ### jcamp comments
 
-Note, in the example above, the comments starting with `$$` appears after the data. 
+Note, in the example above, two comment starting with `$$` up to the end of each line, appears after the data. 
 
-other exemples of comment found in `acqus` files:
+Other exemples of comment found in `acqus` files:
 
 ```
 ...
@@ -169,11 +169,21 @@ $$ Tue Feb 17 18:37:38 2004 "MET (UT+1h)  guest@nmrge300
 
 ```
 
-Most of the time, the second comment line includes the location of the file. Sometimes also the login name of the user and the name of the computer.
+Most of the time, the second comment line includes the location of the file. In most cases the user name is in the path.
 ```
 $$ /opt/topspin3.5pl5/data/brucka/data/nmr/nmr/mb_enrichedchol/32/acqus
 $$ /opt/xwinnmr36/data/matile/nmr/dad_5085/10/acqus
 $$ /beta/data/guest/nmr/exam1d/1/acqus
+$$ /opt/topspin3.5pl5/data/lacour/data/nmr/nmr/EB635F2/15/acqus
+$$ /opt/topspin3.2/data/mazet/toto/SF2-72crude/21/acqus
+$$ /u/data/guest/nmr/AEDiMe/12/acqus
+$$ /u/data/lacour/nmr/RH-53-2/1/acqus
+$$ D:\/data/Administrator/nmr/exam2d_HC/1//acqus
+$$ C:/data/kirill_oldbbo/nmr/ANDR/31/acqus
+$$ C:/Bruker/TopSpin3.5pl2/data/guest/data/nmr/nmr/RM-105-liq/10/acqus
+$$ C:\Bruker\TopSpin3.1\data\b500\data\Push-Beta\nmr/Estradiol/1183/acqus
+$$ e:/u/data/ackermann/nmr/exam_verification/2/acqus
+
 ```
 
 But sometimes it is [different](acqus_file_with_no_origin_and_special_comments.txt) and the two lines are:
@@ -186,7 +196,11 @@ Example of the [some time seen](acqus_file_with_three_comment_lines.txt) third c
 ```
 $$ process /opt/topspin3.5pl5/prog/mod/go4
 $$ process /opt/topspin3.2/prog/mod/shimcntl
-
+$$ process C:\Bruker\TOPSPIN\prog\mod\dirdata.exe
+$$ process C:\Bruker\TopSpin3.5pl2\prog\mod\dirdata.exe
+$$ process /opt/topspin/prog/mod/go
+$$ process /opt/topspin/prog/mod/vtu
+$$ process C:\Bruker\ts21b10\prog\mod\shimcntl.exe
 ```
 
 ### typical acqus file
