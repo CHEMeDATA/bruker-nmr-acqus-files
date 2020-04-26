@@ -6,6 +6,11 @@ For corrections, please edit the file and make a pull request.
 
 ## Context
 
+We are considering here the acqus file in the perspective of extraction of parameters and other metadata for NMR experiments.
+Some precious information are not in the jcamp part, but in comments... see below.
+
+## Introduction
+
 We should consider here, the NMR experiments, not the NMR spectra. NMR spectra are processed NMR experiments, usually by Fourier transformation. You may have multiple spectra for a single experiment even if usually, you have only one (located in the /pdata/1/ folder). NMR spectra could/should/are discussed in a different project.
 
 In order to archive NMR experiments, it is good to be able to extract information from the parameter files, *i.e.* the `acqus` and, for 2d also from the `acqu2s` files... acqu3s for 3D. Note that the last letter "s" stands for status, it is the parameters when the experiment was started. The acqus file contatains the current parameters - they may not correspond to the recorded experiment.
