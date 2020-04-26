@@ -204,7 +204,7 @@ $$ process C:\Bruker\ts21b10\prog\mod\shimcntl.exe
 ```
 
 ### typical acqus file
-
+Full [file](typical_acqus_file.txt)
 ```
 ##TITLE= Parameter file, XWIN-NMR		Version 3.6
 ##JCAMPDX= 5.0
