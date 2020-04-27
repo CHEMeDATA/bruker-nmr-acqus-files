@@ -188,6 +188,10 @@ $$ C:/data/kirill_oldbbo/nmr/ANDR/31/acqus
 $$ C:/Bruker/TopSpin3.5pl2/data/guest/data/nmr/nmr/RM-105-liq/10/acqus
 $$ C:\Bruker\TopSpin3.1\data\b500\data\Push-Beta\nmr/Estradiol/1183/acqus
 $$ e:/u/data/ackermann/nmr/exam_verification/2/acqus
+$$ \\eeyore.ch.man.ac.uk\Hamster\LC\2017\b500b11\data\pure_shift\nmr/ps_workshop_quinine/1003/acqus
+$$ d:/data/nmrsu/nmr/exam2d_CH/1/acqus
+$$ d:\/data/Administrator/nmr/xp_test/32/acqus
+$$ e:/u/data/ackermann/nmr/exam_verification/2/acqus
 
 ```
 
@@ -201,11 +205,14 @@ Example of the [some time seen](acqus_file_with_three_comment_lines.txt) third c
 ```
 $$ process /opt/topspin3.5pl5/prog/mod/go4
 $$ process /opt/topspin3.2/prog/mod/shimcntl
-$$ process C:\Bruker\TOPSPIN\prog\mod\dirdata.exe
-$$ process C:\Bruker\TopSpin3.5pl2\prog\mod\dirdata.exe
 $$ process /opt/topspin/prog/mod/go
 $$ process /opt/topspin/prog/mod/vtu
+$$ process C:\Bruker\TOPSPIN\prog\mod\dirdata.exe
+$$ process C:\Bruker\TopSpin3.5pl2\prog\mod\dirdata.exe
 $$ process C:\Bruker\ts21b10\prog\mod\shimcntl.exe
+$$ process C:\Bruker\TopSpin3.2pl3\prog\au\bin\user\pureshift_2d3d_v3.exe
+$$ process C:\Bruker\ts21b10\prog\mod\shimcntl.exe
+$$ process C:\bruker\tsa\prog\mod\dataserver.exe
 ```
 
 ### typical acqus file
