@@ -6,8 +6,8 @@ For corrections, please edit the file and make a pull request.
 
 ## Context
 
-We are considering here the acqus file in the perspective of extraction of parameters and other metadata for NMR experiments.
-Some precious information are not in the jcamp part, but in comments... see below.
+We are considering here the xwinnmr/topspin `acqus` file in the perspective of extraction of parameters and other metadata for NMR experiments.
+Some precious information are not in jcamp LDR, but in comments... see below.
 
 Here is just a preview of the interesting comments:
 ```
