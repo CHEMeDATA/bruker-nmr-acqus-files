@@ -174,7 +174,20 @@ $$ Tue Feb 17 18:37:38 2004 "MET (UT+1h)  guest@nmrge300
 
 ```
 
-Most of the time, the second comment line includes the location of the file. In most cases the user name is in the path.
+Most of the time, the second comment line includes the location of the file. 
+Taking the path position relative to the acqus file, the reference of the experiment is as follows:
+|position|code|name|Note|
+|--------|----|----|----|
+|0|"acqus"|Parameter file||
+|-1|expno|Experiment number|It may not be a number|
+|-2|expname|Experiment name||
+|-3|"nmr"||Customary, may be different|
+|-m (m=4 or 6)|user|User name||
+|-(m+1)|"data"||Customary, may be different|
+
+**Note:** Often, a "data/nmr/" is found between position -3 and -m.
+
+Examples:
 ```
 $$ /opt/topspin3.5pl5/data/brucka/data/nmr/nmr/mb_enrichedchol/32/acqus
 $$ /opt/xwinnmr36/data/matile/nmr/dad_5085/10/acqus
@@ -195,13 +208,13 @@ $$ e:/u/data/ackermann/nmr/exam_verification/2/acqus
 
 ```
 
-But sometimes it is [different](acqus_file_with_no_origin_and_special_comments.txt) and the two lines are:
+But in very few cases, it is [different](acqus_file_with_no_origin_and_special_comments.txt) and the two lines are:
 ```
 $$ $Source: /sc/CvsTree/sc/gen/src/par/par.npt/NPT_prep_inno_sino_shim/acqu,v $
 $$ $Id: acqu,v 1.3 2012/11/29 09:02:01 miw Exp $
 ```
 
-Example of the [some time seen](acqus_file_with_three_comment_lines.txt) third comment line
+Examples of the [some time seen](acqus_file_with_three_comment_lines.txt) third comment line
 ```
 $$ process /opt/topspin3.5pl5/prog/mod/go4
 $$ process /opt/topspin3.2/prog/mod/shimcntl
