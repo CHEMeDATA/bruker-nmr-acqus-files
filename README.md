@@ -51,7 +51,7 @@ $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 
 Note, in the example above, two comments starting with `$$` finishing with the end of each line. 
 
-Other exemples of comment found in `acqus` files:
+Other exemple of comment found in `acqus` files:
 
 ```
 ...
@@ -63,8 +63,7 @@ $$ /opt/topspin3.5pl5/data/brucka/data/nmr/nmr/mb_enrichedchol/32/acqus
 $$ process /opt/topspin3.5pl5/prog/mod/go4
 ...
 ```
-
-In all cases, some comment lines are found between the non-private and private LDR. These comments are quite interesting as metadata. They allow to recover the date of acquisition, the original file name and location, and in many cases, the xwinnmr/topspin user and the system's login name and the code of the computer.
+**Note:** We are not aware of any other comment in Bruker `acqus` files.
 
 Bruker use mostly *private* LDR. They start with `##$` in instead of `##`. This gives them more freedom with respect to the standard.
 
@@ -95,6 +94,8 @@ The files ends with
 ```
 ##END=
 ```
+
+In all cases, comment lines are found between the non-private and private LDR. These comments are quite interesting as metadata. They allow to recover the date of acquisition, the original file name and location, and in many cases, the xwinnmr/topspin user and the system's login name and the code of the computer.
 
 ### Content of acqus files
 
