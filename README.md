@@ -14,7 +14,7 @@ Here is just a preview of the interesting comments:
 $$ Tue Jun 17 17:27:20 2008 CEST (UT+2h)  guest@nmrge400
 $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 ```
-We should read and analyses them to add add them as metadata for Bruker NMR experiments!
+We should read and analyses them to add these metadata to Bruker NMR experiments objects.
 
 ## Introduction
 
