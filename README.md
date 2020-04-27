@@ -152,7 +152,8 @@ Here is an [example](acqus_file_few_non_private_LDR.txt) without NPOINTS and ORI
 One cannot consider that the comments are associated to ORIGIN, they may be associated to NPOINTS or DATATYPE. In fact they are between the non-private and private LDR.
 
 ### Comment lines
- 
+#### First comment line
+
 Most of the time two comment lines are found, sometime three.
 
 Most of the time, the first comment line includes the date. Sometimes also the login name of the user and the name of the computer.
@@ -172,6 +173,7 @@ $$ Fri Apr 12 15:45:30 2013 CEST (UT+2h)  nmr@nmrge300
 $$ Tue Feb 17 18:37:38 2004 "MET (UT+1h)  guest@nmrge300
 
 ```
+#### Second comment line
 
 Most of the time, the second comment line includes the location of the file. 
 Taking the path position relative to the acqus file, the reference of the experiment is as follows:
@@ -206,12 +208,14 @@ $$ d:\/data/Administrator/nmr/xp_test/32/acqus
 $$ e:/u/data/ackermann/nmr/exam_verification/2/acqus
 
 ```
+#### Important exception
 
-But in very few cases, it is [different](acqus_file_with_no_origin_and_special_comments.txt) and the two lines are:
+But in very few cases, it is [different](acqus_file_with_no_origin_and_special_comments.txt) and the two first comment lines have this form:
 ```
 $$ $Source: /sc/CvsTree/sc/gen/src/par/par.npt/NPT_prep_inno_sino_shim/acqu,v $
 $$ $Id: acqu,v 1.3 2012/11/29 09:02:01 miw Exp $
 ```
+#### Third comment line
 
 Examples of the [some time seen](acqus_file_with_three_comment_lines.txt) third comment line
 ```
