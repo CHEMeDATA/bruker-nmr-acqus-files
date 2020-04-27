@@ -2,7 +2,7 @@
 
 Please [raise an issue](https://github.com/CHEMeDATA/bruker-nmr-acqus-files/issues/new/choose) if you want to comment, add information, *etc.*
 
-For corrections, please [edit](https://github.com/CHEMeDATA/bruker-nmr-acqus-files/edit/master/README.md) the file and make a pull request.
+For corrections, please [edit](https://github.com/CHEMeDATA/bruker-nmr-acqus-files/edit/master/README.md) the file and request a change (at the bottom of the page).
 
 ## Context
 
