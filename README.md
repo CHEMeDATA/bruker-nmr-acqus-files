@@ -35,7 +35,7 @@ One can use exiting librairies to read jcamp files and extract important informa
 
 ### jcamp content
 
-Data in the jcamp format start with `##`, before the "labelled data records" called LDR. The *label* and the *data* are separated by `=`. The data end with the end of the line.
+Data in the jcamp format start with `##`, before the "labelled data records" called LDR. The ***label*** and the ***data*** are separated by `=`. The data end with the end of the line.
 Example:
 ```
 ##TITLE= Parameter file, XWIN-NMR		Version 3.6
