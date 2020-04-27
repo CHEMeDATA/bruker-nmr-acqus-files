@@ -9,6 +9,12 @@ For corrections, please edit the file and make a pull request.
 We are considering here the acqus file in the perspective of extraction of parameters and other metadata for NMR experiments.
 Some precious information are not in the jcamp part, but in comments... see below.
 
+Here is just a preview:
+```
+$$ Tue Jun 17 17:27:20 2008 CEST (UT+2h)  guest@nmrge400
+$$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
+```
+
 ## Introduction
 
 We should consider here, the NMR experiments, not the NMR spectra. NMR spectra are processed NMR experiments, usually by Fourier transformation. You may have multiple spectra for a single experiment even if usually, you have only one (located in the /pdata/1/ folder). NMR spectra could/should/are discussed in a different project.
@@ -37,7 +43,7 @@ One can use exiting librairies to read jcamp files and extract important informa
 
 ### jcamp content
 
-Data in the jcamp format start with `##`, before the "labelled data records" called LDR. The *label* and the *record* are separated by `=`. 
+Data in the jcamp format start with `##`, before the "labelled data records" called LDR. The *label* and the *data* are separated by `=`. The data end with the end of the line.
 Example:
 ```
 ##TITLE= Parameter file, XWIN-NMR		Version 3.6
@@ -51,7 +57,7 @@ $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 
 ### jcamp comments
 
-Note, in the example above, two comment starting with `$$` up to the end of each line, appears after the data. 
+Note, in the example above, two comments starting with `$$` finishing with the end of each line. 
 
 Other exemples of comment found in `acqus` files:
 
