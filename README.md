@@ -9,11 +9,12 @@ For corrections, please edit the file and make a pull request.
 We are considering here the acqus file in the perspective of extraction of parameters and other metadata for NMR experiments.
 Some precious information are not in the jcamp part, but in comments... see below.
 
-Here is just a preview:
+Here is just a preview of the interesting comments:
 ```
 $$ Tue Jun 17 17:27:20 2008 CEST (UT+2h)  guest@nmrge400
 $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 ```
+We should read and analyses them to add add them as metadata for Bruker NMR experiments!
 
 ## Introduction
 
