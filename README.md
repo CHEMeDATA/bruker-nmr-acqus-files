@@ -24,15 +24,6 @@ In order to archive NMR experiments, it is good to be able to extract informatio
 
 When editing a `acqus` file with the Bruker software, the files may be changed slightly (space - end-of-line located at a diffent place, different zero padding of some parameters, etc.). This makes strict comparison of acqus files a bad criterion for searching for duplicates, or unique identification. Using the `ser` or the `fid` file (with md5, for example) is better to have a unique identifier. Note that you may find md5 corresponding to only zeroes (probably if the experiment is stopped before completion - when running zg, (it seems that the file is filled with zeroes to have no surprise with full disks? and then replace with real data). 
 
-## MD5 of files
-
-The md5 is a hash code that can be used as uniq identifier of the any file, in particular `fid` (1D experiments) and `ser` (2D experiments) files. 
-
-On mac and linux systems
-```
-find "./" -name fid -exec md5 -r {} \; > listmd5.txt
-```
-list the md5 of all fid's located in the folders where the command is run.
 
 ## Descrition of acqus files
 
@@ -270,4 +261,23 @@ $$ /u/data/zumbuehl/nmr/zum1-2/2/acqus
 ##$ZL3= 120
 ##$ZL4= 120
 ##END=
+```
+## MD5 of files
+
+The md5 is a hash code that can be used as uniq identifier of any file, in particular `fid` (1D experiments) and `ser` (2D experiments) files. 
+
+On mac and linux systems
+```
+find "./" -name fid -exec md5 -r {} \; > listmd5_path.txt
+```
+list the md5 of all fid's located in the folders where the command is run.
+
+Then, you can find duplicates after keeping the md5, sorting the md5 alphabetically and using `uniq` command to count the number of time each md5 appear and remove the case where it appears only once:
+```
+cat listmd5_path.txt | cut -c1-32 |sort | uniq -c |grep -v " 1 "|sort >duplicatemd5.txt
+```
+To find the path of the duplicates, take any entry in `duplicatemd5.txt` and grep it from the `listmd5_path.txt` file.
+```
+grep  "THE-MD5-OF-A-DUPLICATE" listmd5_path.txt
+grep "facd5411d47565a2228074d931083003" listmd5_path.txt
 ```
