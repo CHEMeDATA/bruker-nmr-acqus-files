@@ -33,9 +33,9 @@ Bruker `acqus` files are code with the ["jcamp" format](http://jcamp-dx.org/).
 
 One can use exiting librairies to read jcamp files and extract important information. But some very interesting information are located in the comments associated to private LDR. We will therefore discuss this in some details here to make sure we don't miss important information.
 
-### jcamp content
+### Jcamp format
 
-Data in the jcamp format start with `##`, before the "labelled data records" called LDR. The ***label*** and the ***data*** are separated by `=`. The data end with the end of the line.
+Data in the [jcamp format](http://jcamp-dx.org/) start with `##`, before the "labelled data records" called LDR. The ***label*** and the ***data*** are separated by `=`. The data end with the end of the line.
 Example:
 ```
 ##TITLE= Parameter file, XWIN-NMR		Version 3.6
@@ -231,7 +231,7 @@ $$ process C:\Bruker\ts21b10\prog\mod\shimcntl.exe
 $$ process C:\bruker\tsa\prog\mod\dataserver.exe
 ```
 
-### typical acqus file
+### Typical acqus file
 Full [file](typical_acqus_file.txt)
 ```
 ##TITLE= Parameter file, XWIN-NMR		Version 3.6
