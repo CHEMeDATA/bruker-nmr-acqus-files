@@ -1,6 +1,6 @@
 # bruker-nmr-acqus-files
 
-Please [raise an issue](https://github.com/CHEMeDATA/bruker-nmr-acqus-files/issues/new/choose) if you want to comment add information, complain, etc...
+Please [raise an issue](https://github.com/CHEMeDATA/bruker-nmr-acqus-files/issues/new/choose) if you want to comment, add information, *etc.*
 
 For corrections, please edit the file and make a pull request.
 
