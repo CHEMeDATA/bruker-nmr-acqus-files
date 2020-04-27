@@ -217,7 +217,7 @@ $$ $Id: acqu,v 1.3 2012/11/29 09:02:01 miw Exp $
 ```
 #### Third comment line
 
-Examples of the [some time seen](acqus_file_with_three_comment_lines.txt) third comment line
+Examples of the [rare](acqus_file_with_three_comment_lines.txt) third comment line:
 ```
 $$ process /opt/topspin3.5pl5/prog/mod/go4
 $$ process /opt/topspin3.2/prog/mod/shimcntl
